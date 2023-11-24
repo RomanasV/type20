@@ -1,0 +1,61 @@
+/* 
+  CSS Sintaksė:
+
+  selector {
+    property: value;
+  }
+ */
+
+
+h4 {
+  color: red;
+}
+
+a {
+  color: green;
+}
+
+div h4 {
+  background-color: black;
+}
+
+main > p {
+  text-transform: uppercase;
+}
+
+.paragraph-with-background {
+  background-color: bisque;
+}
+
+#main-headings {
+  background-color: blanchedalmond;
+}
+
+#main-headings h1 {
+  font-size: 20px;
+}
+
+.color-red {
+  color: red;
+}
+
+.bg-dark {
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+ul li:first-child {
+  text-decoration: underline;
+}
+
+p.color-red {
+  color: rgb(255, 172, 172);
+}
+
+p span {
+  text-transform: uppercase;
+}

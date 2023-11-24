@@ -6,10 +6,17 @@
   <title>My first website</title>
 
   <style>
-    body {
-      margin-bottom: 500px;
+    h3 {
+      color: blue;
+      background-color: orange;
+    }
+
+    h1 {
+      color: purple;
     }
   </style>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Block Tipo Elementai -->
@@ -21,25 +28,29 @@
    -->
   
   <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
+
+  <h2 style="color: rgb(234, 116, 116); text-transform: uppercase;">Heading 2</h2>
+
   <h3>Heading 3</h3>
   <h4>Heading 4</h4>
-  <h5>Heading 5</h5>
+  <h5 class="bg-dark">Heading 5</h5>
   <h6>Heading 6</h6>
 
   <div id="main-headings">
     <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
+
+    <h2 style="color: rgb(234, 116, 116); text-transform: uppercase;">Heading 2</h2>
+
     <h3>Heading 3</h3>
     <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
+    <h5 class="color-red">Heading 5</h5>
     <h6>Heading 6</h6>
   </div>
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatum amet illo facilis. Asperiores, sapiente aliquid, mollitia facere natus vitae qui exercitationem amet pariatur odit, tempora harum vero laboriosam voluptatem?</p>
+  <p class="paragraph-with-background">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatum amet illo facilis. Asperiores, sapiente aliquid, mollitia facere natus vitae qui exercitationem amet pariatur odit, tempora harum vero laboriosam voluptatem?</p>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium modi itaque ad odit magnam officia sunt voluptatum quia voluptatibus doloremque illo facere, cum voluptates! Ad dolores possimus dolorum dignissimos dolor.
+  <p class="color-red">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium modi itaque ad odit magnam officia sunt voluptatum quia voluptatibus <span>doloremque</span> illo facere, cum voluptates! Ad dolores possimus dolorum dignissimos dolor.
   </p>
 
   
@@ -50,9 +61,9 @@
   
   <!-- Unordered list - nenumeruotas sąrašas -->
   <ul>
-    <li>Pirmas</li>
+    <li class="uppercase">Pirmas</li>
     <li>Antras</li>
-    <li>Trečias</li>
+    <li class="color-red uppercase">Trečias</li>
   </ul>
 
   <!-- Ordered list - numeruotas sąrašas -->
@@ -73,7 +84,7 @@
   <!-- Inline tipo elementai -->
   <button>Click!</button>
 
-  <a href="https://google.com" target="_blank">Nuoroda i isorini puslapi</a>
+  <a class="bg-dark" href="https://google.com" target="_blank">Nuoroda i isorini puslapi</a>
   <a href="/contacts.html">Contact Us</a>
   <a href="mailto:info@parduotuve.lt">Susisiekti el. pastu</a>
   <a href="tel:+3704546312">Susisiekti telefonu</a>
@@ -97,7 +108,7 @@
 
     <div>
       <input type="checkbox" id="agree">
-      <label for="agree">Agree with terms and conditions</label>
+      <label for="agree"><span>Agree</span> with terms and conditions</label>
     </div>
     
     <div>
@@ -138,6 +149,14 @@
   <p><i>Lorem ipsum</i> dolor sit, <em>amet consectetur</em> adipisicing elit. Error, odit? <span>Assumenda a maiores</span> possimus iure! <strong>Sequi labore sed saepe</strong>, eveniet non dignissimos <cite>delectus ea</cite> repellat architecto provident <mark>consectetur veritatis</mark> omnis!</p>
 
   <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+  <main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quos sequi mollitia.</p>
+
+    <div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, nisi.</p>
+    </div>
+  </main>
 
 </body>
 </html>
