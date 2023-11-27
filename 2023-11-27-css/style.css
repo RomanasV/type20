@@ -1,0 +1,24 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  /* text-decoration-line: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: green;
+  text-decoration-thickness: 5px; */
+
+  text-decoration: underline dotted red 10px;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+p {
+  background-color: bisque;
+  border: 30px solid black;
+  padding: 30px;
+  margin: 30px;
+  width: 50%;
+}
