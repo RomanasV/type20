@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+div {
+  background-image: url(city.jpg);
+  background-color: #131E22;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  background-position: bottom;
+
+  color: white;
+  padding: 50px 50px 100px;
+}
