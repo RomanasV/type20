@@ -1,0 +1,62 @@
+li {
+  text-decoration: underline;
+}
+
+li:first-child {
+  text-transform: uppercase;
+}
+
+li:nth-child(3) {
+  font-weight: bold;
+}
+
+li:last-child {
+  color: red;
+}
+
+p.paragraph::first-line {
+  color: red;
+}
+
+p.paragraph::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+
+h2 {
+  color: blue;
+}
+
+h2::before {
+  content: '"';
+  color: black;
+  background-color: bisque;
+}
+
+h2::after {
+  content: '"';
+  color: black;
+  background-color: bisque;
+}
+
+p.styled-paragraph {
+  position: relative;
+  color: blueviolet;
+  padding-left: 15px;
+}
+
+p.styled-paragraph::before {
+  content: '';
+  height: 50%;
+  width: 2px;
+  background-color: tomato;
+  
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
