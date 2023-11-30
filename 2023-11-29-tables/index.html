@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>30</td>
+          <td>Vilnius</td>
+        </tr>
+
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>30</td>
+          <td>Kaunas</td>
+        </tr>
+
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>30</td>
+          <td>Klaipėda</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>2023-2024 metų įvertinimai</caption>
+
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Pirmas pusmetis</th>
+          <th scope="col">Antras pusmetis</th>
+          <th scope="col">Metinis</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">John</th>
+          <td>8</td>
+          <td>9</td>
+          <td>9</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Steve</th>
+          <td>5</td>
+          <td>10</td>
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Peter</th>
+          <td>7</td>
+          <td>9</td>
+          <td>8</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th scope="row">Vidurkiai</th>
+          <td>7</td>
+          <td>9</td>
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Maksimalus balas</th>
+          <td>8</td>
+          <td>10</td>
+          <td>9</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Minimalus balas</th>
+          <td>5</td>
+          <td>9</td>
+          <td>8</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table>
+      <caption>Lentelės pavadinimas</caption>
+
+      <thead>
+        <tr>
+          <th>1 stulpelis</th>
+          <th>2 stulpelis</th>
+          <th>3 stulpelis</th>
+          <th>4 stulpelis</th>
+          <th>5 stulpelis</th>
+          <th>6 stulpelis</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td colspan="2">Vienas ir du</td>
+          <td>Trys</td>
+          <td>Keturi</td>
+          <td>Penki</td>
+          <td rowspan="2">Šeši x2</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Vienas x2</td>
+          <td>Du</td>
+          <td colspan="3">Trys, keturi ir penki</td>
+        </tr>
+
+        <tr>
+          <td>Du</td>
+          <td>Trys</td>
+          <td>Keturi</td>
+          <td>Penki</td>
+          <td>Šeši</td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Vienas ir du</td>
+          <td colspan="2">Trys ir keturi</td>
+          <td colspan="2">Penki ir šeši</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <section>
+    <table>
+      <caption>Lentelės pavadinimas Colgroup</caption>
+
+      <!-- <colgroup>
+        <col class="first">
+        <col class="second">
+        <col class="third">
+        <col class="fourth">
+        <col class="fifth">
+        <col class="sixth">
+      </colgroup> -->
+
+      <colgroup>
+        <col class="first">
+        <col span="4" class="middle">
+        <col class="last">
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>1 stulpelis</th>
+          <th>2 stulpelis</th>
+          <th>3 stulpelis</th>
+          <th>4 stulpelis</th>
+          <th>5 stulpelis</th>
+          <th>6 stulpelis</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Du</td>
+          <td>Trys</td>
+          <td>Keturi</td>
+          <td>Penki</td>
+          <td>Šeši</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Du</td>
+          <td>Trys</td>
+          <td>Keturi</td>
+          <td>Penki</td>
+          <td>Šeši</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Du</td>
+          <td>Trys</td>
+          <td>Keturi</td>
+          <td>Penki</td>
+          <td>Šeši</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Du</td>
+          <td>Trys</td>
+          <td>Keturi</td>
+          <td>Penki</td>
+          <td>Šeši</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+</body>
+</html>

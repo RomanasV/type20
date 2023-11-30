@@ -1,0 +1,32 @@
+table {
+  margin-bottom: 30px;
+}
+
+div caption {
+  background-color: blueviolet;
+  color: white;
+}
+
+div thead {
+  background-color: aqua;
+}
+
+div tbody {
+  background-color: blanchedalmond;
+}
+
+div tfoot {
+  background-color: chocolate;
+}
+
+section table .first {
+  background-color: green;
+}
+
+section table .middle {
+  background-color: tomato;
+}
+
+section table .last {
+  background-color: cadetblue;
+}
