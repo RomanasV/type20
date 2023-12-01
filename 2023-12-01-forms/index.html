@@ -7,62 +7,63 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form action="">
+  <!-- <form action="/form-success.html"> -->
+  <form>
     <div class="form-control">
       <label for="name">Name:</label>
-      <input type="text" name="" id="name" value="John" placeholder="Enter your name" maxlength="20" minlength="2" required>
+      <input type="text" name="person-name" id="name" value="John" placeholder="Enter your name" maxlength="20" minlength="2" required>
     </div>
 
     <div class="form-control">
       <label for="age">Age</label>
-      <input type="number" name="" id="age" min="0" max="100" placeholder="Age" value="20" readonly>
+      <input type="number" name="person-age" id="age" min="0" max="100" placeholder="Age" value="20" readonly>
     </div>
 
     <div class="form-control">
       <label for="color">Color</label>
-      <input type="color" name="" id="color">
+      <input type="color" name="color" id="color">
     </div>
 
     <div class="form-control">
       <label for="password">Password</label>
-      <input type="password" name="" id="password" placeholder="Enter your password">
+      <input type="password" name="password" id="password" placeholder="Enter your password">
     </div>
 
     <div class="form-control">
       <label for="date">Date</label>
-      <input type="date" name="" id="date">
+      <input type="date" name="date" id="date">
     </div>
 
     <div class="form-control">
       <label for="heigth">Height</label>
-      <input type="range" name="" id="heigth" min="50" max="230" value="170">
+      <input type="range" name="heigth" id="heigth" min="50" max="230" value="170">
     </div>
 
     <div class="form-control">
       <label for="email">Email</label>
-      <input type="email" name="" id="email" placeholder="Enter your email" required>
+      <input type="email" name="email" id="email" placeholder="Enter your email" >
     </div>
 
     <fieldset>
       <legend>Checkbox elementų pasirinkimai</legend>
 
       <div class="form-control">
-        <input type="checkbox" name="checkbox-name" id="check-1">
+        <input type="checkbox" name="checkbox-name" id="check-1" value="check 1" checked>
         <label for="check-1">Check 1</label>
       </div>
 
       <div class="form-control">
-        <input type="checkbox" name="checkbox-name" id="check-2">
+        <input type="checkbox" name="checkbox-name" id="check-2" value="check 2" checked>
         <label for="check-2">Check 2</label>
       </div>
 
       <div class="form-control">
-        <input type="checkbox" name="checkbox-name" id="check-3">
+        <input type="checkbox" name="checkbox-name" id="check-3" value="check 3" checked>
         <label for="check-3">Check 3</label>
       </div>
 
       <div class="form-control">
-        <input type="checkbox" name="checkbox-name" id="check-4">
+        <input type="checkbox" name="checkbox-name" id="check-4" value="check 4" checked>
         <label for="check-4">Check 4</label>
       </div>
     </fieldset>
@@ -71,25 +72,40 @@
       <legend>Radio elementų pasirinkimai</legend>
 
       <div class="form-control">
-        <input type="radio" name="radio-name" id="radio-1">
+        <input type="radio" name="radio-name" id="radio-1" value="radio 1" checked>
         <label for="radio-1">Radio 1</label>
       </div>
 
       <div class="form-control">
-        <input type="radio" name="radio-name" id="radio-2">
+        <input type="radio" name="radio-name" id="radio-2" value="radio 2">
         <label for="radio-2">Radio 2</label>
       </div>
 
       <div class="form-control">
-        <input type="radio" name="radio-name" id="radio-3">
+        <input type="radio" name="radio-name" id="radio-3" value="radio 3">
         <label for="radio-3">Radio 3</label>
       </div>
 
       <div class="form-control">
-        <input type="radio" name="radio-name" id="radio-4">
+        <input type="radio" name="radio-name" id="radio-4" value="radio 4">
         <label for="radio-4">Radio 4</label>
       </div>
     </fieldset>
+
+    <div class="form-control">
+      <label for="cities">Cities:</label>
+
+      <select name="cities" id="cities">
+        <option value="vilnius">Vilnius (sostinė)</option>
+        <option value="kaunas">Kaunas</option>
+        <option value="klaipeda">Klaipėda</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" cols="40" rows="5" placeholder="Your message"></textarea>
+    </div>
 
     <div class="form-control">  
       <!-- <button type="submit">Enter Data</button> -->
