@@ -1,0 +1,50 @@
+button, 
+input[type="submit"] {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  padding: 8px 16px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: transparent;
+  color: blue;
+}
+
+button:active, 
+input[type="submit"]:active {
+  color: rgb(0, 0, 97);
+  border-color: rgb(0, 0, 97);
+}
+
+input[type="password"] {
+  background-color: blanchedalmond;
+}
+
+textarea:focus,
+input:focus {
+  border: 2px solid orange;
+  background-color: burlywood;
+  outline: none;
+}
+
+/* textarea:required,
+input:required  */
+:required {
+  color: red;
+}
+
+input[type="number"]:read-only,
+input[type="text"]:read-only,
+input[type="email"]:read-only {
+  opacity: 0.5;
+}
+
+a:visited {
+  color: red;
+}
