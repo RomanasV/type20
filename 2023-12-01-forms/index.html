@@ -10,12 +10,12 @@
   <form action="">
     <div class="form-control">
       <label for="name">Name:</label>
-      <input type="text" name="" id="name">
+      <input type="text" name="" id="name" value="John" placeholder="Enter your name" maxlength="20" minlength="2" required>
     </div>
 
     <div class="form-control">
       <label for="age">Age</label>
-      <input type="number" name="" id="age">
+      <input type="number" name="" id="age" min="0" max="100" placeholder="Age" value="20" readonly>
     </div>
 
     <div class="form-control">
@@ -25,7 +25,7 @@
 
     <div class="form-control">
       <label for="password">Password</label>
-      <input type="password" name="" id="password">
+      <input type="password" name="" id="password" placeholder="Enter your password">
     </div>
 
     <div class="form-control">
@@ -35,16 +35,61 @@
 
     <div class="form-control">
       <label for="heigth">Height</label>
-      <input type="range" name="" id="heigth">
+      <input type="range" name="" id="heigth" min="50" max="230" value="170">
     </div>
 
     <div class="form-control">
       <label for="email">Email</label>
-      <input type="email" name="" id="email">
+      <input type="email" name="" id="email" placeholder="Enter your email" required>
     </div>
 
-    <input type="checkbox" />
-    <input type="radio" />
+    <fieldset>
+      <legend>Checkbox elementų pasirinkimai</legend>
+
+      <div class="form-control">
+        <input type="checkbox" name="checkbox-name" id="check-1">
+        <label for="check-1">Check 1</label>
+      </div>
+
+      <div class="form-control">
+        <input type="checkbox" name="checkbox-name" id="check-2">
+        <label for="check-2">Check 2</label>
+      </div>
+
+      <div class="form-control">
+        <input type="checkbox" name="checkbox-name" id="check-3">
+        <label for="check-3">Check 3</label>
+      </div>
+
+      <div class="form-control">
+        <input type="checkbox" name="checkbox-name" id="check-4">
+        <label for="check-4">Check 4</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Radio elementų pasirinkimai</legend>
+
+      <div class="form-control">
+        <input type="radio" name="radio-name" id="radio-1">
+        <label for="radio-1">Radio 1</label>
+      </div>
+
+      <div class="form-control">
+        <input type="radio" name="radio-name" id="radio-2">
+        <label for="radio-2">Radio 2</label>
+      </div>
+
+      <div class="form-control">
+        <input type="radio" name="radio-name" id="radio-3">
+        <label for="radio-3">Radio 3</label>
+      </div>
+
+      <div class="form-control">
+        <input type="radio" name="radio-name" id="radio-4">
+        <label for="radio-4">Radio 4</label>
+      </div>
+    </fieldset>
 
     <div class="form-control">  
       <!-- <button type="submit">Enter Data</button> -->
