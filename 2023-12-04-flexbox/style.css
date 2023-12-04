@@ -1,0 +1,33 @@
+.container {
+  background-color: bisque;
+  height: 500px;
+  width: 500px;
+
+  display: flex;
+  
+  /* flex-flow: row wrap; */
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+}
+
+.green {
+  background-color: green;
+  order: 1;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+  align-self: flex-end;
+}
