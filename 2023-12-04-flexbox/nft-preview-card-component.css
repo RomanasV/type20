@@ -1,0 +1,76 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+.cards-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-description {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.card-extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.card-extras-partial{
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.card-price-wrapper {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-days-wrapper {
+  color: hsl(215, 51%, 70%);
+  opacity: 0.6;
+}
+
+.footer-wrapper {
+  border-top: 2px solid hsl(215, 32%, 27%);
+  padding-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-author-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.footer-author-text {
+  opacity: 0.7;
+}
+
+.footer-author-link {
+  color: white;
+  text-decoration: none;
+}
