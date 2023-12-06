@@ -48,6 +48,7 @@ p {
   height: 100%;
   object-fit: cover;
   mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 .card-description {
