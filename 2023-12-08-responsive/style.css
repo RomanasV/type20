@@ -1,0 +1,95 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* DESKTOP FIRST pavyzdys */
+
+.container {
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 799px) {
+  .container {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .container {
+    background-color: purple;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .container {
+    background-color: pink;
+    color: black;
+  }
+}
+
+/* MOBILE FIRST pavyzdys */
+
+.container-mobile {
+  background-color: pink;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 300px) {
+  .container-mobile {
+    background-color: purple;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container-mobile {
+    background-color: green;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container-mobile {
+    width: 70%;
+    padding: 20px;
+  }
+}
+
+
+
+
+/* DESKTOP FIRST paruoštukas */
+
+@media screen and (max-width: 799px) {
+
+}
+
+@media screen and (max-width: 499px) {
+
+}
+
+@media screen and (max-width: 299px) {
+
+}
+
+
+/* MOBILE FIRST paruoštukas */
+
+@media screen and (min-width: 300px) {
+
+}
+
+@media screen and (min-width: 500px) {
+
+}
+
+@media screen and (min-width: 800px) {
+
+}
