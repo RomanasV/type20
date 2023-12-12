@@ -28,21 +28,31 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 20px;
 }
 
-.button.button-secondary {
-  background-color: white;
-  color: black;
+.button {
   text-decoration: none;
-  padding: 8px 30px;
   border-radius: 50px;
   display: inline-block;
   text-align: center;
   border: none;
-  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
   text-transform: capitalize;
   font-weight: 700;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-secondary {
+  background-color: white;
+  color: black;
+  padding: 8px 30px;
+  font-size: 16px;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 70px;
+  font-size: 18px;
 }
 
 .hero-section {
@@ -51,7 +61,6 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .hero-image {
   width: 100%;
@@ -70,3 +79,65 @@ h1, h2, h3, h4, h5, h6 {
   width: 150px;
 }
 
+.hero-content {
+  padding: 30px;
+  display: grid;
+  gap: 80px;
+}
+
+.hero-content-wrapper {
+  text-align: center;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feature-item {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+  .hero-content {
+    grid-template-columns: 3fr 4fr;
+  }
+
+  .hero-content-wrapper {
+    text-align: left;
+  }
+
+  .feature-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    gap: 100px;
+    padding: 50px 30px 50px 100px;
+  }
+
+  .feature-item:nth-of-type(odd) .feature-image-wrapper {
+    order: 10;
+  }
+}
