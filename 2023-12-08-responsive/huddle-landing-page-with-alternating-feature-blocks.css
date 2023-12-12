@@ -1,0 +1,72 @@
+:root {
+  --color-primary: hsl(322, 100%, 66%);
+  --color-pale-cyan: hsl(193, 100%, 96%);
+  --color-dark-cyan: hsl(192, 100%, 9%);
+  --color-blue: hsl(208, 11%, 55%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.button.button-secondary {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 700;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section {
+  background-color: var(--color-pale-cyan);
+  background-image: url('/images/bg-hero-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  column-gap: 30px;
+}
+
+.logo {
+  width: 150px;
+}
+
