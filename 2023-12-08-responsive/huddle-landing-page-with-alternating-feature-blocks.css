@@ -47,6 +47,18 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   font-weight: 700;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+
+  opacity: 1;
+
+  /* transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out; */
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.7;
 }
 
 .button-secondary {
@@ -149,6 +161,45 @@ h1, h2, h3, h4, h5, h6 {
 .footer-wrapper a {
   color: white;
   text-decoration: none;
+
+  /* transition: border-color 3s ease-in-out;
+  border-bottom: 2px solid transparent; */
+
+  position: relative;
+}
+
+/* .footer-wrapper a::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer-wrapper .footer-social-list a::before {
+  content: none;
+} */
+
+.footer-wrapper ul:not(.footer-social-list) a::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer-wrapper a:hover {
+  /* border-color: white; */
+}
+
+.footer-wrapper ul:not(.footer-social-list) a:hover::after {
+  background-color: white;
 }
 
 .footer-columns-wrapper {
@@ -189,6 +240,7 @@ ul.list-with-icons .footer-list-item {
   display: grid;
   grid-template-columns: 30px 1fr;
   column-gap: 10px;
+  justify-items: start;
 }
 
 .footer-social-list .footer-link {
@@ -198,12 +250,25 @@ ul.list-with-icons .footer-list-item {
   border: 2px solid white;
   border-radius: 50px;
   padding: 10px;
+
+  /* transition-property: border-color color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out; */
+  /* transition-delay: 0s; */
+
+  transition: border-color 0.3s ease-in-out;
 }
 
 .footer-social-icon {
   fill: white;
   width: 100%;
   height: 100%;
+
+  /* transition: fill 0.3s ease-in-out; */
+
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .footer-social-list .footer-link:hover {
