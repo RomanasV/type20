@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: azure;
+  padding: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+}
+
+h1::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  height: 50%;
+  width: 5px;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  background-color: green;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: bisque;
+  margin-top: 500px;
+  margin-bottom: 1500px;
+
+  position: relative;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.green {
+  background-color: green;
+
+  position: sticky;
+  top: 20px;
+}
+
+.blue {
+  background-color: blue;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
