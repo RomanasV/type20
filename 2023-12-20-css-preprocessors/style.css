@@ -2,6 +2,20 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  background-color: azure;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .bg-dark {
   background-color: black;
   color: white;

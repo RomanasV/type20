@@ -1,3 +1,5 @@
+@use "scss/base";
+
 $color-white: white;
 $color-green: green;
 $color-black: black;
@@ -5,10 +7,6 @@ $color-red: red;
 $spacing-1: 15px;
 $spacing-2: 20px;
 $spacing-3: 30px;
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 
 .bg-dark {
   background-color: $color-black;
