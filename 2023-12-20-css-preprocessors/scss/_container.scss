@@ -1,0 +1,16 @@
+@use "variables/spacings";
+@use "responsive";
+
+.container {
+  width: 100%;
+  margin: spacings.$spacing-3 auto;
+
+  @include responsive.sm {
+    width: 80%;
+  }
+
+  @include responsive.md {
+    width: 50%;
+  }
+}
+

@@ -1,0 +1,88 @@
+@use "variables/colors";
+@use "variables/spacings";
+@use "responsive";
+
+.wrapper {
+  padding: spacings.$spacing-3;
+
+  &.full-width {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include responsive.sm {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include responsive.md {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &.half-width {
+    width: 50%;
+  }
+
+  &.bg-dark {
+    background-color: rgb(71, 71, 71);
+  }
+
+  h2 {
+    font-size: 40px;
+
+    &.color-red {
+      color: colors.$red;
+      transition: color 0.3s;
+      cursor: pointer;
+
+      @include responsive.sm {
+        color: pink;
+      }
+
+      @include responsive.md {
+        color: white;
+      }
+
+      &:hover {
+        color: colors.$green;
+      }
+    }
+  }
+
+  // p {
+  //   &::before {
+  //     content: '- ';
+  //     color: colors.$red;
+  //   }
+
+  //   &.empty::before {
+  //     content: unset;
+  //   }
+  // }
+
+  p {
+    &:not(.empty) {
+      &::before {
+        content: '- ';
+        color: colors.$red;
+      }
+    }
+
+    &:first-of-type {
+      font-size: 30px;
+    }
+  }
+  
+  .box {
+    border: 2px solid colors.$green;
+    padding: spacings.$spacing-3;
+    margin-bottom: spacings.$spacing-3;
+
+    & > p {
+      color: orange;
+    }
+  }
+}

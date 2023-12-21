@@ -1,3 +1,5 @@
+@use "variables/colors";
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -14,4 +16,9 @@ h1, h2, h3 {
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+.bg-dark {
+  background-color: colors.$black;
+  color: colors.$white;
 }
