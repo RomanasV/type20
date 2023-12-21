@@ -1,0 +1,35 @@
+@use "variables";
+
+.button {
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 700;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.button-primary {
+    background-color: variables.$color-primary;
+    color: white;
+    padding: 12px 70px;
+    font-size: 18px;
+  }
+
+  &.button-secondary {
+    background-color: white;
+    color: black;
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+}

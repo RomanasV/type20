@@ -1,0 +1,44 @@
+@use "variables";
+@use "responsive";
+
+.hero-section {
+  background-color: variables.$color-pale-cyan;
+  background-image: url('/images/bg-hero-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    column-gap: 30px;
+
+    .logo {
+      width: 150px;
+    }
+  }
+
+  .hero-content {
+    padding: 30px;
+    display: grid;
+    gap: 80px;
+
+    @include responsive.lg {
+      grid-template-columns: 3fr 4fr;
+    }
+
+    .hero-content-wrapper {
+      text-align: center;
+
+      @include responsive.lg {
+        text-align: left;
+      }
+    }
+
+    .hero-image {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "responsive";
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .feature-item {
+    text-align: center;
+
+    @include responsive.lg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      text-align: left;
+      gap: 100px;
+      padding: 50px 30px 50px 100px;
+    }
+
+    .feature-image {
+      width: 100%;
+      max-width: 450px;
+    }
+
+    &:nth-of-type(odd) .feature-image-wrapper {
+      @include responsive.lg {
+        order: 10;
+      }
+    }
+  }
+}
