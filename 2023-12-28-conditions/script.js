@@ -261,3 +261,28 @@ if (age < 18) {
 } else {
   console.log('Pirkti galima')
 }
+
+
+
+let num1 = 21
+let num2 = 7
+
+console.log(num1)
+console.log(num2)
+
+console.log(num1 % num2)
+console.log(num1 % num2 === 0)
+
+if (num1 % num2 === 0) {
+  console.log(`Skaičius ${num1} dalijasi iš ${num2}.`)
+} else {
+  console.log(`Skaičius ${num1} nesidalija iš ${num2}.`)
+}
+
+let numIsDivadible = num1 % num2 === 0
+
+if (numIsDivadible) {
+  console.log(`Skaičius ${num1} dalijasi iš ${num2}.`)
+} else {
+  console.log(`Skaičius ${num1} nesidalija iš ${num2}.`)
+}
