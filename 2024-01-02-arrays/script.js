@@ -130,3 +130,69 @@ let splicedNums = nums.splice(2, 0, 2.5, 2.7, 2.8)
 
 console.log(splicedNums)
 console.log(nums)
+
+// CALLBACK FUNCTION
+function renderAnswer(answer) {
+  return `Atsakymas yra: ${answer}.`
+}
+
+function renderAnswer2(answer) {
+  return `Jūsų atsakymas yra: ${answer}!`
+}
+
+function getPerimeter(height, width, giveAnswer) {
+  let perimeter = (height + width) * 2
+  console.log(giveAnswer(perimeter))
+}
+
+getPerimeter(10, 15, renderAnswer)
+getPerimeter(10, 15, renderAnswer2)
+
+// MAP METHOD
+let numsArr = [1, 2, 3, 4, 5, 6, 7, 10]
+
+let forNumsArr = []
+for (let i = 0; i < numsArr.length; i++) {
+  let numAnswer = numsArr[i] * numsArr[i]
+  forNumsArr.push(numAnswer)
+}
+console.log(forNumsArr)
+
+// numsArr.map(function(num, index, originalArray){
+//   console.log(num)
+//   console.log(index)
+//   console.log(originalArray)
+// })
+
+let mapNumsArr = numsArr.map(function(num){
+  return num * num
+})
+console.log(mapNumsArr)
+
+// let mapNumsArr2 = numsArr.map((num) => {
+//   return num * num
+// })
+let mapNumsArr2 = numsArr.map(num => num * num)
+console.log(mapNumsArr2)
+
+// FILTER
+let forFilteredNums = []
+for (let i = 0; i < numsArr.length; i++) {
+  if (numsArr[i] > 5) {
+    forFilteredNums.push(numsArr[i])
+  }
+}
+console.log(forFilteredNums)
+
+console.log(numsArr)
+
+let filteredNums1 = numsArr.filter(function(num){
+  return num > 5
+})
+console.log(filteredNums1)
+
+// let filteredNums2 = numsArr.filter((num) => {
+//   return num > 5
+// })
+let filteredNums2 = numsArr.filter(num => num > 5)
+console.log(filteredNums2)
