@@ -214,3 +214,202 @@ let task230all = [...task230first, ...task230last];
 console.log(task230first);
 console.log(task230last);
 console.log(task230all);
+
+// 3.1. Gauti tik teigiamus skaičius.
+let task31 = arr.filter(item => item > 0);
+console.log(task31);
+
+// 3.2. Gauti tik neigiamus skaičius.
+let task32 = arr.filter(item => item < 0);
+console.log(task32);
+
+// 3.3. Gauti tik skaičius, kurie dalinasi iš 2.
+let task33 = arr.filter(item => item % 2 === 0);
+console.log(task33);
+
+// 3.4. Gauti tik skaičius, kurie dalinasi iš 3.
+let task34 = arr.filter(item => item % 3 === 0);
+console.log(task34);
+
+// 3.5. Gauti tik skaičius, kurie dalinasi iš 5.
+let task35 = arr.filter(item => item % 5 === 0);
+console.log(task35);
+
+// 3.6. Gauti tik skaičius, kurie dalinasi iš 11.
+let task36 = arr.filter(item => item % 11 === 0);
+console.log(task36);
+
+// 3.7. Gauti tik skaičius, kurie dalinasi iš 33.
+let task37 = arr.filter(item => item % 33 === 0);
+console.log(task37);
+
+// 3.8. Gauti tik skaičius, kurie dalinasi iš 2 ir iš 3.
+let task38 = arr.filter(item => item % 2 === 0 && item % 3 === 0);
+console.log(task38);
+
+// 3.9. Gauti tik skaičius, kurie dalinasi iš 3 ir iš 7.
+let task39 = arr.filter(item => item % 3 === 0 && item % 7 === 0);
+console.log(task39);
+
+// 3.10. Gauti tik skaičius, kurie dalinasi iš 5 ir iš 9.
+let task310 = arr.filter(item => item % 5 === 0 && item % 9 === 0);
+console.log(task310);
+
+// 3.11. Gauti tik skaičius, kurie dalinasi iš 5 ir iš 11.
+let task311 = arr.filter(item => item % 5 === 0 && item % 11 === 0);
+console.log(task311);
+
+// 3.12. Gauti tik skaičius, kurie dalinasi iš 2, 8 ir 12.
+let task312 = arr.filter(item => item % 2 === 0 && item % 8 === 0 && item % 12 === 0);
+console.log(task312);
+
+// 3.13. Gauti tik skaičius, kurie dalinasi iš 2 arba iš 3.
+let task313 = arr.filter(item => item % 2 === 0 || item % 3 === 0);
+console.log(task313);
+
+// 3.14. Gauti tik skaičius, kurie dalinasi iš 3 arba iš 5.
+let task314 = arr.filter(item => item % 3 === 0 || item % 5 === 0);
+console.log(task314);
+
+// 3.15. Gauti tik skaičius, kurie dalinasi iš 5 arba iš 6.
+let task315 = arr.filter(item => item % 5 === 0 || item % 6 === 0);
+console.log(task315);
+
+// 3.16. Gauti tik skaičius, kurie dalinasi iš 7 arba iš 8.
+let task316 = arr.filter(item => item % 7 === 0 || item % 8 === 0);
+console.log(task316);
+
+// 3.17. Gauti tik skaičius, kurie dalinasi iš 9 arba iš 13.
+let task317 = arr.filter(item => item % 9 === 0 || item % 13 === 0);
+console.log(task317);
+
+// 3.18. Gauti tik skaičius, kurie dalinasi iš 2, 3 arba iš 5.
+let task318 = arr.filter(item => item % 2 === 0 || item % 3 === 0 || item % 5 === 0);
+console.log(task318);
+
+// 3.19. Gauti tik skaičius, kurie dalinasi iš 5, 7 arba iš 9.
+let task319 = arr.filter(item => item % 5 === 0 || item % 7 === 0 || item % 9 === 0);
+console.log(task319);
+
+// 3.20. Gauti tik skaičius, kurie dalinasi iš 7, 8 arba iš 11.
+let task320 = arr.filter(item => item % 7 === 0 || item % 8 === 0 || item % 11 === 0);
+console.log(task320);
+
+// 3.21. Gauti tik skaičius, kurie dalinasi iš 9, 12 arba iš 13.
+let task321 = arr.filter(item => item % 9 === 0 || item % 12 === 0 || item % 13 === 0);
+console.log(task321);
+
+// 3.22. Gauti tik skaičius, kurie yra didesni už 100.
+let task322 = arr.filter(item => item > 100);
+console.log(task322);
+
+// 3.23. Gauti tik skaičius, kurie yra didesni už 555.
+let task323 = arr.filter(item => item > 555);
+console.log(task323);
+
+// 3.24. Gauti tik skaičius, kurie yra didesni arba lygūs 888.
+let task324 = arr.filter(item => item >= 888);
+console.log(task324);
+
+// 3.25. Gauti tik skaičius, kurie yra didesni arba lygūs 6789.
+let task325 = arr.filter(item => item >= 6789);
+console.log(task325);
+
+// 3.26. Gauti tik skaičius, kurie yra mažesni už 50.
+let task326 = arr.filter(item => item < 50);
+console.log(task326);
+
+// 3.27. Gauti tik skaičius, kurie yra mažesni už 1000.
+let task327 = arr.filter(item => item < 1000);
+console.log(task327);
+
+// 3.28. Gauti tik skaičius, kurie yra mažesni arba lygūs -1.
+let task328 = arr.filter(item => item <= -1);
+console.log(task328);
+
+// 3.29. Gauti tik skaičius, kurie yra mažesni arba lygūs -5564.
+let task329 = arr.filter(item => item <= -5564);
+console.log(task329);
+
+// 3.30. Gauti tik skaičius, kurie yra mažesni už 1000 ir didesni už 500.
+let task330 = arr.filter(item => item < 1000 && item > 500);
+console.log(task330);
+
+// 3.31. Gauti tik skaičius, kurie yra mažesni už 100 ir didesni už 0.
+let task331 = arr.filter(item => item < 1000 && item > 500);
+console.log(task331);
+
+// 3.32. Gauti tik skaičius, kurie yra mažesni už 0 ir didesni už -50.
+let task332 = arr.filter(item => item < 0 && item > -50);
+console.log(task332);
+
+// 3.33. Gauti tik skaičius, kurie yra mažesni arba lygūs 0 ir didesni už -100.
+let task333 = arr.filter(item => item <= 0 && item > -100);
+console.log(task333);
+
+// 3.34. Gauti tik skaičius, kurie yra didesni arba lygūs 0 ir mažesni už 55.
+let task334 = arr.filter(item => item >= 0 && item < 55);
+console.log(task334);
+
+// 3.35. Gauti tik skaičius, kurie yra didesni arba lygūs 444 ir mažesni arba lygūs 654.
+let task335 = arr.filter(item => item >= 444 && item <= 654);
+console.log(task335);
+
+// 3.36. Gauti tik teigiamus skaičius, kurie dalinasi iš 2.
+let task336 = arr.filter(item => item > 0 && item % 2 === 0);
+console.log(task336);
+
+// 3.37. Gauti tik teigiamus skaičius, kurie dalinasi iš 3.
+let task337 = arr.filter(item => item > 0 && item % 3 === 0);
+console.log(task337);
+
+// 3.38. Gauti tik neigiamus skaičius, kurie dalinasi iš 4.
+let task338 = arr.filter(item => item < 0 && item % 4 === 0);
+console.log(task338);
+
+// 3.39. Gauti tik neigiamus skaičius, kurie dalinasi iš 111.
+let task339 = arr.filter(item => item < 0 && item % 111 === 0);
+console.log(task339);
+
+// 3.40. Gauti tik skaičius, kurie yra didesni už 500 ir kurie dalinasi iš 2.
+let task340 = arr.filter(item => item > 500 && item % 2 === 0);
+console.log(task340);
+
+// 3.41. Gauti tik skaičius, kurie yra didesni už 1000 ir kurie dalinasi iš 3.
+let task341 = arr.filter(item => item > 1000 && item % 3 === 0);
+console.log(task341);
+
+// 3.42. Gauti tik skaičius, kurie yra mažesni už 1000 ir kurie dalinasi iš 9.
+let task342 = arr.filter(item => item < 1000 && item % 9 === 0);
+console.log(task342);
+
+// 3.43. Gauti tik skaičius, kurie yra mažesni už 500 ir kurie dalinasi iš 2.
+let task343 = arr.filter(item => item < 500 && item % 2 === 0);
+console.log(task343);
+
+// 3.44. Gauti tik skaičius, kurie yra didesni arba lygūs 33 ir kurie dalinasi iš 3.
+let task344 = arr.filter(item => item >= 33 && item % 3 === 0);
+console.log(task344);
+
+// 3.45. Gauti tik skaičius, kurie yra didesni arba lygūs 444 ir kurie dalinasi iš 12.
+let task345 = arr.filter(item => item >= 444 && item % 12 === 0);
+console.log(task345);
+
+// 3.46. Gauti tik skaičius, kurie yra mažesni arba lygūs 155 ir kurie dalinasi iš 5.
+let task346 = arr.filter(item => item <= 155 && item % 5 === 0);
+console.log(task346);
+
+// 3.47. Gauti tik skaičius, kurie yra mažesni arba lygūs -333 ir kurie dalinasi iš 9.
+let task347 = arr.filter(item => item <= -333 && item % 9 === 0);
+console.log(task347);
+
+// 3.48. Gauti tik skaičius, kurie yra didesni už 100, mažesni už 500 ir kurie dalinasi iš 5.
+let task348 = arr.filter(item => item > 100 && item < 500 && item % 5 === 0);
+console.log(task348);
+
+// 3.49. Gauti tik skaičius, kurie yra didesni arba lygūs 888, mažesni už 1000 ir kurie dalinasi iš 2.
+let task349 = arr.filter(item => item >= 888 && item < 1000 && item % 2 === 0);
+console.log(task349);
+
+let task350 = arr.filter(item => item <= 888 && item >= -333 && item % 3 === 0 && item !== 0);
+console.log(task350);
