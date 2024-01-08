@@ -336,7 +336,7 @@ let task330 = arr.filter(item => item < 1000 && item > 500);
 console.log(task330);
 
 // 3.31. Gauti tik skaičius, kurie yra mažesni už 100 ir didesni už 0.
-let task331 = arr.filter(item => item < 1000 && item > 500);
+let task331 = arr.filter(item => item < 100 && item > 0);
 console.log(task331);
 
 // 3.32. Gauti tik skaičius, kurie yra mažesni už 0 ir didesni už -50.
