@@ -413,3 +413,157 @@ console.log(task349);
 
 let task350 = arr.filter(item => item <= 888 && item >= -333 && item % 3 === 0 && item !== 0);
 console.log(task350);
+
+
+
+// 3.51. Gauti tik skaičius.
+let task351 = arr.filter(item => isNaN(item));
+console.log(task351);
+
+// 3.52. Gauti tik tekstą (string).
+let task352 = arr.filter(item => !isNaN(item));
+console.log(task352);
+
+// 3.53. Gauti tik tekstus (string), kurie turi daugiau nei 5 simbolius.
+let task353 = arr.filter(item => isNaN(item) && item.length > 5);
+console.log(task353);
+
+// 3.54. Gauti tik tekstus (string), kurie turi mažiau arba lygiai 5 simbolius.
+let task354 = arr.filter(item => isNaN(item) && item.length <= 5);
+console.log(task354);
+
+// 3.55. Gauti tik tekstus (string), kurie turi mažiau nei 7 simbolius.
+let task355 = arr.filter(item => isNaN(item) && item.length < 7);
+console.log(task355);
+
+// 3.56. Gauti tik tekstus (string), kurie turi raidę t.
+let task356 = arr.filter(item => isNaN(item) && item.includes('t'));
+console.log(task356);
+
+// 3.57. Gauti tik tekstus (string), kurie turi raidę y.
+let task357 = arr.filter(item => isNaN(item) && item.includes('y'));
+console.log(task357);
+
+// 3.58. Gauti tik tekstus (string), kurie turi raides e arba a.
+let task358 = arr.filter(item => isNaN(item) && (item.includes('e') || item.includes('a')));
+console.log(task358);
+
+// 3.59. Gauti tik tekstus (string), kurie turi raides t ir i.
+let task359 = arr.filter(item => isNaN(item) && (item.includes('t') && item.includes('i')));
+console.log(task359);
+
+// 3.60. Gauti tik tekstus (string), kurie turi raide t, bet neturi raidės k.
+let task360 = arr.filter(item => isNaN(item) && (item.includes('t') && item.includes('k')));
+console.log(task360);
+
+// 3.61. Gauti tik tekstus (string), kurie turi raide a, bet neturi raidės s.
+let task361 = arr.filter(item => isNaN(item) && (item.includes('a') && !item.includes('s')));
+console.log(task361);
+
+// 3.62. Gauti tik tekstus (string), kurie turi daugiau nei vieną raidę t.
+let task362 = arr.filter(item => {
+  if (isNaN(item)) {
+    // // PIRMAS TREČIAS
+    // let wordLetters = item.split(''); // split metodas suskaido string'ą pagal pateiktą reikšmę. Jeigu pateikiami tušti skliaustai, tai string'ą suskaido raidėmis
+    // let sameLettersArray = wordLetters.filter(letter => letter === 't');
+
+    // if (sameLettersArray.length > 1) {
+    //   return item;
+    // }
+
+    // ANTRAS VARIANTAS
+    // let letterCount = 0
+
+    // for (let i = 0; i < item.length; i++) {
+    //   let letter = item[i]
+
+    //   if (letter === 't') {
+    //     letterCount++
+    //   }
+
+    //   // if (letterCount > 1) {
+    //   //   return
+    //   // }
+    // }
+
+    // return letterCount > 1
+
+
+    // TREČIAS BŪDAS
+    let wordLetters = item.split('')
+    return wordLetters.length > 2
+  }
+});
+console.log(task362);
+
+// 3.63. Gauti tik tekstus (string), kurie turi raidžių junginį st.
+let task363 = arr.filter(item => isNaN(item) && item.includes('st'));
+console.log(task363);
+
+// 3.64. Gauti tik tekstus (string), kurie turi raidžių junginį nd.
+let task364 = arr.filter(item => isNaN(item) && item.includes('nd'));
+console.log(task364);
+
+// 3.65. Gauti tik tekstus (string), kurie neturi raidės s.
+let task365 = arr.filter(item => isNaN(item) && !item.includes('s'));
+console.log(task365);
+
+// 3.66. Gauti tik tekstus (string), kurie neturi raidės t.
+let task366 = arr.filter(item => isNaN(item) && !item.includes('t'));
+console.log(task366);
+
+// 3.67. Gauti tik tekstus (string), kurie neturi raidės r ir l.
+let task367 = arr.filter(item => isNaN(item) && !item.includes('r') && !item.includes('l'));
+console.log(task367);
+
+// 3.68. Gauti tik tekstus (string), kurie prasideda skaičiumi.
+let task368 = arr.filter(item => isNaN(item) && !isNaN(item[0]));
+console.log(task368);
+
+// 3.69. Gauti tik tekstus (string), kurie prasideda raide s.
+let task369 = arr.filter(item => isNaN(item) && item.startsWith('s'));
+console.log(task369);
+
+// 3.70. Gauti tik tekstus (string), kurie prasideda raide o.
+let task370 = arr.filter(item => isNaN(item) && item.startsWith('o'));
+console.log(task370);
+
+// 3.70. Gauti tik tekstus (string), kurie baigiasi raide d.
+let task3701 = arr.filter(item => isNaN(item) && item.endsWith('d'));
+console.log(task3701);
+
+// 3.71. Gauti tik tekstus (string), kurie baigiasi raide s.
+let task371 = arr.filter(item => isNaN(item) && item.endsWith('s'));
+console.log(task371);
+
+// 3.72. Gauti tik tekstus (string), kurie turi daugiau nei 4 simbolius ir turi raidę o.
+let task372 = arr.filter(item => isNaN(item) && item.length > 4 && item.includes('o'));
+console.log(task372);
+
+// 3.73. Gauti tik tekstus (string), kurie turi daugiau arba lygiai 5 simbolius ir turi raidę a.
+let task373 = arr.filter(item => isNaN(item) && item.length >= 5 && item.includes('a'));
+console.log(task373);
+
+// 3.74. Gauti tik tekstus (string), kurie turi porinį simbolių skaičių.
+let task374 = arr.filter(item => isNaN(item) && item.length % 2 === 0);
+console.log(task374);
+
+// 3.75. Gauti tik tekstus (string), kurie turi neporinį simbolių skaičių ir turi raidę s.
+let task375 = arr.filter(item => isNaN(item) && item.length % 2 !== 0 && item.includes('s'));
+console.log(task375);
+
+// 3.76. Gauti tik tekstus (string), kurių trečias simbolis yra a.
+let task376 = arr.filter(item => isNaN(item) && item[2] === 'a');
+console.log(task376);
+
+// 3.77. Gauti tik tekstus (string), kurių ketvirtas simbolis yra l.
+let task377 = arr.filter(item => isNaN(item) && item[3] === 'l');
+console.log(task377);
+
+// 3.78. Gauti tik tekstus (string), kurių penktas simbolis nėra t ir kurie turi daugiau simbolių nei 4.
+let task378 = arr.filter(item => isNaN(item) && item[4] !== 't' && item.length > 4);
+console.log(task378);
+
+// 3.79. Gauti tik tekstus (string), kurių pirmas simbolis nėra e, kurie turi mažiau simbolių nei 6 ir kurie neprasideda skaičiumi.
+let task379 = arr.filter(item => isNaN(item) && item[0] !== 'e' && item.length < 6 && isNaN(item[0]));
+console.log(task379);
