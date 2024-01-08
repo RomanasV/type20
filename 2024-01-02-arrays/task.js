@@ -417,11 +417,11 @@ console.log(task350);
 
 
 // 3.51. Gauti tik skaičius.
-let task351 = arr.filter(item => isNaN(item));
+let task351 = arr.filter(item => !isNaN(item));
 console.log(task351);
 
 // 3.52. Gauti tik tekstą (string).
-let task352 = arr.filter(item => !isNaN(item));
+let task352 = arr.filter(item => isNaN(item));
 console.log(task352);
 
 // 3.53. Gauti tik tekstus (string), kurie turi daugiau nei 5 simbolius.
@@ -453,7 +453,7 @@ let task359 = arr.filter(item => isNaN(item) && (item.includes('t') && item.incl
 console.log(task359);
 
 // 3.60. Gauti tik tekstus (string), kurie turi raide t, bet neturi raidės k.
-let task360 = arr.filter(item => isNaN(item) && (item.includes('t') && item.includes('k')));
+let task360 = arr.filter(item => isNaN(item) && (item.includes('t') && !item.includes('k')));
 console.log(task360);
 
 // 3.61. Gauti tik tekstus (string), kurie turi raide a, bet neturi raidės s.

@@ -196,3 +196,48 @@ console.log(filteredNums1)
 // })
 let filteredNums2 = numsArr.filter(num => num > 5)
 console.log(filteredNums2)
+
+// STRING METHODS
+let str = 'Hello World'
+console.log(str.charAt(0))
+
+let firstName = 'John'
+let lastName = 'Doe'
+let fullName = firstName.concat(' ', lastName)
+console.log(fullName)
+
+let str2 = 'labas rytas'
+console.log(str2.includes('rytas'))
+
+console.log(str2.indexOf('a'))
+
+let replacedStr = str2.replace('rytas', 'vakaras')
+console.log(replacedStr)
+
+let replacedStr2 = str2.replaceAll('a', '_')
+console.log(replacedStr2)
+
+console.log(str2.slice(0, 5))
+
+console.log(str.toLowerCase())
+console.log(str.toUpperCase())
+
+// NUMBER METHODS
+let num1 = 15.1546543
+console.log(num1.toFixed(2))
+
+let num2 = '15.54643'
+console.log(parseFloat(num2))
+console.log(parseInt(num2))
+
+let num3 = -5
+console.log(Math.abs(num3))
+
+// let maxNumber = Math.max(1, 4, 555, 10, 100, 5, 6)
+
+let numsArray = [-5, 1, 4, 555, 10, 100, 5, 6]
+let maxNumber = Math.max(...numsArray)
+console.log(maxNumber)
+
+let minNumber = Math.min(...numsArray)
+console.log(minNumber)
