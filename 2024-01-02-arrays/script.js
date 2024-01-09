@@ -241,3 +241,89 @@ console.log(maxNumber)
 
 let minNumber = Math.min(...numsArray)
 console.log(minNumber)
+
+// SORT METHOD - modifikuoja originalų masyvą
+const sortArray = [1, 30, 4, 21, 100000];
+console.log(sortArray)
+
+// let sortedArr = sortArray.sort((a, b) => {
+//   if (a < b) {
+//     return -1
+//   } 
+  
+//   if (a > b) {
+//     return 1
+//   } 
+  
+//   return 0
+// })
+
+// let sortedArr = sortArray.sort((a, b) => {
+//   return a - b
+// })
+
+// let sortedArr = sortArray.sort((a, b) => a - b)
+let sortedArr = sortArray.sort((a, b) => b - a)
+
+console.log(sortedArr)
+
+let months = ['March', 'January', 'February', 'December', 'Ok', 'asdasdsdfsdf'];
+console.log(months)
+
+// let sortedStr = months.sort((a, b) => {
+//   return a.length - b.length
+// })
+
+let sortedStr = months.sort((a, b) => b.length - a.length)
+console.log(sortedStr)
+
+// REDUCE METHOD
+const reduceArray = [1, 2, 3, 4, 5, 7, 9, 10];
+
+// 2 + 1 = 3
+// 3 + 3 = 6
+// 4 + 6 = 10
+// 5 + 10 = 15
+// 7 + 15 = 22
+// 9 + 22 = 31
+// 10 + 31 = 41
+
+console.log(reduceArray)
+
+// let arraySum = reduceArray.reduce((sum, currentNum, currentIndex, originalArr) => {
+//   console.log('Index: ' + currentIndex)
+//   console.log('Current Value: ' + currentNum)
+//   console.log('Sum: ' + sum)
+//   console.log('New Sum: ', currentNum + sum)
+
+//   return currentNum + sum
+// })
+
+// let arraySum = reduceArray.reduce((sum, currentNum) => {
+//   return currentNum + sum
+// })
+
+// let arraySum = reduceArray.reduce((sum, currentNum) => currentNum + sum)
+
+// Initial value Parameter
+
+let arraySum = reduceArray.reduce((sum, currentNum, currentIndex) => {
+  console.log('Index: ' + currentIndex)
+  console.log('Current Value: ' + currentNum)
+  console.log('Sum: ' + sum)
+  console.log('New Sum: ', currentNum + sum)
+
+  return currentNum + sum
+}, 555)
+
+console.log(arraySum)
+
+let countriesArr = ['Lithuania', 'Poland', 'France', 'Germany']
+console.log(countriesArr.join(', '))
+
+// let countriesStr = countriesArr.reduce((str, currentStr) => {
+//   return str + ', ' + currentStr
+// })
+
+let countriesStr = countriesArr.reduce((str, currentStr) => str + ', ' + currentStr)
+console.log(countriesStr)
