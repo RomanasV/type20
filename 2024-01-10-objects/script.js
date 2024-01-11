@@ -56,6 +56,8 @@ console.log(student1[4])
 
 console.groupEnd()
 
+console.groupCollapsed('Objects')
+
 /* 
 
 Student 1:
@@ -292,3 +294,182 @@ studentObj.switchStudentActivity = function() {
 console.log(studentObj.switchStudentActivity())
 console.log(studentObj.switchStudentActivity())
 console.log(studentObj.switchStudentActivity())
+
+console.groupEnd()
+
+// Objektai masyvuose
+
+let visitedCountries = [
+  {
+    name: 'Poland',
+    date: 2022,
+    ranking: 4,
+    cities: ['Poznan', 'Wroclaw'],
+  },
+  {
+    name: 'Germany',
+    date: 2020,
+    ranking: 4,
+    cities: ['Miestas 1', 'Miestas 2', 'Miestas 3'],
+  },
+  {
+    name: 'Spain',
+    date: 2010,
+    ranking: 5,
+    cities: ['Miestas 1'],
+  },
+  {
+    name: 'Bulgaria',
+    date: 2005,
+    ranking: 3,
+    cities: [],
+  }
+]
+
+console.log(visitedCountries)
+console.log(visitedCountries.length)
+
+console.log(visitedCountries[0])
+console.log(visitedCountries[0].name)
+console.log(visitedCountries[0].date)
+console.log(visitedCountries[0].ranking)
+console.log(visitedCountries[0].cities)
+console.log(visitedCountries[0].cities[0])
+console.log(visitedCountries[0].cities[1])
+
+console.log(Object.keys(visitedCountries[0]))
+console.log(Object.values(visitedCountries[0]))
+
+console.log(visitedCountries[1])
+console.log(visitedCountries[1].name)
+console.log(visitedCountries[1].date)
+console.log(visitedCountries[1].ranking)
+
+console.log(visitedCountries[2])
+console.log(visitedCountries[2].name)
+console.log(visitedCountries[2].date)
+console.log(visitedCountries[2].ranking)
+
+console.log(visitedCountries[3])
+console.log(visitedCountries[3].name)
+console.log(visitedCountries[3].date)
+console.log(visitedCountries[3].ranking)
+
+console.log('--------FOR---------')
+for (let i = 0; i < visitedCountries.length; i++) {
+  console.log(visitedCountries[i])
+  console.log(visitedCountries[i].name)
+  console.log(visitedCountries[i].date)
+  console.log(visitedCountries[i].ranking)
+}
+
+console.log('--------MAP---------')
+visitedCountries.map(country => {
+  console.log(country)
+  console.log(country.name)
+  console.log(country.date)
+  console.log(country.ranking)
+})
+
+let filteredCountries1 = visitedCountries.filter(country => {
+  // console.log(country)
+  // console.log(country.name)
+  // console.log(country.date)
+  // console.log(country.ranking)
+
+  return country.date > 2015
+})
+console.log(filteredCountries1)
+
+let filteredCountries2 = visitedCountries.filter(country => country.name === 'Germany')
+console.log(filteredCountries2)
+
+let filteredCountries3 = visitedCountries.filter(country => country.ranking >= 4)
+console.log(filteredCountries3)
+
+let filteredCountries4 = visitedCountries.filter(country => country.name.length % 2 === 0)
+console.log(filteredCountries4)
+
+let filteredCountries5 = visitedCountries.filter(country => country.date <= 2020 && country.ranking < 5)
+console.log(filteredCountries5)
+
+let filteredCountries6 = visitedCountries.filter(country => country.cities.length > 1)
+console.log(filteredCountries6)
+
+let newCountry = {
+  name: 'Italy',
+  date: 2024,
+  ranking: 5,
+  cities: ['Miestas 1', 'Miestas 2']
+}
+
+visitedCountries.push(newCountry)
+console.log(visitedCountries)
+
+console.log(visitedCountries.slice(0, 2))
+
+let dimensions = [
+  {
+    height: 100,
+    width: 15,
+  },
+  {
+    height: 14,
+    width: 24,
+  },
+  {
+    height: 51,
+    width: 74,
+  },
+  {
+    height: 35,
+    width: 49,
+  },
+  {
+    height: 10,
+    width: 1,
+  }
+]
+
+console.log(dimensions)
+
+const allPerimeters = dimensions.map(dimension => {
+  let perimeter = (dimension.height + dimension.width) * 2
+  return perimeter
+})
+
+console.log(allPerimeters)
+
+const allAreas = dimensions.map(dimension => dimension.height * dimension.width)
+console.log(allAreas)
+
+// const allData = dimensions.map(dimension => {
+//   let perimeter = (dimension.height + dimension.width) * 2
+//   let area = dimension.height * dimension.width
+
+//   let data = {
+//     height: dimension.height,
+//     width: dimension.width,
+//     perimeter: perimeter,
+//     area: area,
+//   }
+
+//   return data
+// })
+
+const allData = dimensions.map(dimension => {
+  let height = dimension.height
+  let width = dimension.width
+
+  let perimeter = (height + width) * 2
+  let area = height * width
+
+  return {
+    height,
+    width,
+    perimeter,
+    area,
+  }
+})
+
+console.log(allData)
