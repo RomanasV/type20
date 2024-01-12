@@ -330,6 +330,81 @@ function task728(postsData) {
   console.log(filteredPosts)
 }
 
+// 7.22. Išvesti tik tuos masyvo narius, kurių pavadinimas prasideda raide "s".
+function task722(postsData) {
+  // postsData.map((post) => {
+  //   if (post.title.startsWith('s')) {
+  //     console.log(post)
+  //   }
+  // });
+
+  let filteredPosts = postsData.filter((post) => post.title.startsWith('s'));
+  console.log(filteredPosts)
+}
+
+// task722(posts);
+
+// 7.23. Išvesti tik tuos masyvo narius, kurių pavadinimas baigiasi "t" arba "m".
+function task723(postsData) {
+  let filteredPosts = postsData.filter((post) => post.title.endsWith('t') || post.title.endsWith('m'));
+
+  console.log(filteredPosts);
+}
+
+// task723(posts);
+
+// 7.24. Išvesti tik tuos masyvo narius, kurių pavadinimas turi daugiau simbolių nei 15.
+function task724(postsData) {
+  let filteredPosts = postsData.filter((post) => post.title.length > 15);
+
+  console.log(filteredPosts);
+}
+
+// task724(posts);
+
+// 7.25. Išvesti tik tuos masyvo narius, kurių pavadinimas turi mažiau simbolių nei 20 ir kurių "body" turi daugiau simbolių nei 50.
+function task725(postsData) {
+  let filteredPosts = postsData.filter((post) => post.title.length < 20 && post.body.length > 50);
+
+  console.log(filteredPosts);
+}
+
+// task725(posts);
+
+// 7.26. Išvesti tik tuos masyvo narius, kurių pavadinimas turi tarp 20 ir 30 simbolių ir kurių "body" turi tarp 70 ir 130 simbolių.
+function task726(postsData) {
+  let filteredPosts = postsData.filter((post) => (
+    post.title.length > 20 && 
+    post.title.length < 30 && 
+    post.body.length > 70 && 
+    post.body.length < 130
+  ));
+
+  console.log(filteredPosts);
+}
+
+// task726(posts);
+
+
+// 7.27. Išvesti tik tuos masyvo narius, kurių pavadinimas turi simbolių junginį "it", o "body" turi simbolių junginį "quo".
+function task727(postsData) {
+  let filteredPosts = postsData.filter((post) => post.title.includes('it') && post.body.includes('quo'));
+
+  console.log(filteredPosts);
+}
+
+// task727(posts);
+
+// 7.28. Išvesti tik tuos masyvo narius, kurių "body" turi žodį "sit". Jeigu žodis turi šį simbolių junginį, tačiau tai nėra pilna jo reikšmė (pvz. žodžiai "sitto" ar "quasit"), jie neturėtų būti atvaizduojami.
+function task728(postsData) {
+  let filteredPosts = postsData.filter(post => {
+    let words = post.body.split(' ')
+    return words.includes('sit')
+  })
+
+  console.log(filteredPosts)
+}
+
 // task728(posts)
 
 // 7.29. Išvesti tik tuos masyvo narius, kurių pavadinimas turi daugiau nei 3 "a" raides, o "body" turi mažiau nei 7 "o" raides.
