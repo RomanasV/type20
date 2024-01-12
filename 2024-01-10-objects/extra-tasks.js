@@ -318,3 +318,64 @@ function task719(postsData) {
 }
 
 // task719(posts);
+
+// 7.28. Išvesti tik tuos masyvo narius, kurių "body" turi žodį "sit". Jeigu žodis turi šį simbolių junginį, tačiau tai nėra pilna jo reikšmė (pvz. žodžiai "sitto" ar "quasit"), jie neturėtų būti atvaizduojami.
+
+function task728(postsData) {
+  let filteredPosts = postsData.filter(post => {
+    let words = post.body.split(' ')
+    return words.includes('sit')
+  })
+
+  console.log(filteredPosts)
+}
+
+// task728(posts)
+
+// 7.29. Išvesti tik tuos masyvo narius, kurių pavadinimas turi daugiau nei 3 "a" raides, o "body" turi mažiau nei 7 "o" raides.
+function task729(postsData) {
+  let filteredPosts = postsData.filter(post => post.title.split('a').length > 4 && post.body.split('o').length < 8)
+
+  console.log(filteredPosts)
+}
+
+// task729(posts)
+
+// 7.30. Išvesti visų masyvo narių pavadinimus surūšiuotus nuo mažiausiai iki daugiausiai raidžių "body" property turinčių narių. Papildomai, prie išvesto teksto pridėti ir "body" raidžių skaičių.
+function task730(postsData) {
+  console.log(postsData)
+
+  // let finishedPosts = postsData.toSorted((a, b) => {
+  //   return a.body.length - b.body.length
+  // }).map(post => {
+  //   let body = post.body
+  //   let bodyLength = body.length
+
+  //   let updatedPost = {
+  //     id: post.id,
+  //     title: post.title,
+  //     body: `(${bodyLength}) ${body}`,
+  //   }
+    
+  //   return updatedPost
+  // })
+
+  let sortedPosts = postsData.toSorted((a, b) => a.body.length - b.body.length)
+
+  let finishedPosts = sortedPosts.map(post => {
+    let body = post.body
+    let bodyLength = body.length
+
+    let updatedPost = {
+      id: post.id,
+      title: post.title,
+      body: `(${bodyLength}) ${body}`,
+    }
+    
+    return updatedPost
+  })
+
+  console.log(finishedPosts)
+}
+
+// task730(posts)
