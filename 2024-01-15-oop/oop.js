@@ -131,7 +131,8 @@ class Rectangle {
 }
 
 // subclass
-// HalfRectangle yra sub-klasė Rectangle klasės atžvilgiu 
+// HalfRectangle yra sub-klasė Rectangle klasės atžvilgiu
+// HalfRectangle yra super-klasė TestRecgtangle atžvilgiu
 class HalfRectangle extends Rectangle {
   constructor(rectHeight, rectWidth, rectColor) {
     super()
@@ -144,6 +145,11 @@ class HalfRectangle extends Rectangle {
     const area = this.getArea() / 2
     return area
   }
+}
+
+// TestRectangle yra sub-klasė HalfRectanle kalsės atžvilgiu
+class TestRectangle extends HalfRectangle {
+
 }
 
 class InfoRectangle extends Rectangle {
