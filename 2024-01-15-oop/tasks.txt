@@ -16,3 +16,66 @@ UŽDUOTIS
 6.1. Visų keturkampių objektuose sukurti funkciją, kuri grąžina pilną keturkampių informacijos teksta: „Keturkampio plotis: x, keturkampio ilgis: y, keturkampio perimetras: z, keturkampio plotas: y."
 6.2. Į konsolę išvesti šiuos naujus duomenis.
 
+
+
+UŽDUOTIS:
+1. Sukurti įmonės klasę.
+2. Klasė turės:
+2.1. Property „company name" ir priskirti įmonės pavadinimo reikšmę.
+2.2. Property „opened" ir priskirti įmonės įkūrimo metų reikšmę.
+2.3. Property „companyCode" ir priskirti įmonės kodo reikšmę.
+2.4. Property „employees" ir priskirti įmonėje dirbančių darbuotojų kiekio reikšmę.
+2.5. Property „ceo" ir priskirti įmonės vadovo reikšmę.
+2.6. Property „nvo" ir priskirti boolean reikšmę (ar įmonė turi NVO statusą).
+2.7. Property „workingLocation" ir priskirti įmonės veiklos šalių value (turi būti bent 2 veiklos šalys).
+2.8. Property „activityAreas" ir priskirti įmonės veiklos sričių reikšmę (turi būti bent dvi veiklos sritys).
+2.9. Property „contacts", kuris turės:
+      2.9.1. „phone"
+      2.9.2. „email"
+      2.9.3. „address", kuris turės:
+          2.9.3.1. „country"
+          2.9.3.2. „city"
+          2.9.3.3. „street"
+          2.9.3.4. „apartment"
+
+
+5. Sukurti funkciją, kuri sukuria adreso string'ą: „Vilniaus st. 15, Vilnius, Lithuania.".
+6. Sukurti dvi funkcijas, kurios:
+       6.1. Pakeičia NVO statusą į true.
+       6.2. Pakeičia NVO statusą į false.
+       6.3. BONUS, sukurti funkciją, kuri keičia NVO statusą iš true į false ir iš false į true.
+7. Sukurti funkcijas, kurios grąžina:
+       7.1. Šalis, kuriose veikia įmonė į vieną string'ą.
+       7.2. Veiklos sritis, kuriose veikia įmonė į vieną string'ą.
+8. Sukurti funkcijas, kurios prideda:
+       8.1. Naują veiklos šalį prie šalių masyvo.
+       8.2. Naują veiklos rūšį prie veiklų masyvo.
+9. Sukurti funkcijas, kurios pašalina:
+       9.1. Veiklos šalį iš šalių masyvo.
+       9.2. Veiklos rūšį iš veiklų masyvo.
+
+
+
+
+1. Susikurkite konstruktorių car, kuris priims brand, model, engine ir turės metodą 'turnOn' - kuris alertins 'vrooom'. Sukurkite du objektus ir patikrinkite ar veikia.
+2. Pakoreguokite šį konstruktorių ir pridėkite papildomą property 'basePrice' ir metodą 'getPrice'. basePrice propertį įrašys sukuriant objektą, tačiau getPrice priklausimai nuo variklio išmes kokia yra galutinė kaina. Jei variklis 'electric' - kaina bus +10,000; jei 'diesel' +5,000; jei 'petrol' - kaina tokia kokia ir basePrice.
+3. Pridėti funkciją 'getDiscount', kuri, kaip argumentą, priima nuolaidos dydį ir grąžina kainą su nuolaida.
+4. Pridėti property 'mileage' ir papildoti automobilių objektus pridedant jų ridą.
+5. Pakoreguoti kainų funkcijas:
+       5.1. Jeigu rida daugiau nei 0, tai kaina sumažėja 10%.
+       5.2. Jeigu rida daugiau nei 20000, tai kaina sumažėja 15%.
+       5.3. Jeigu rida daugiau nei 50000, tai kaina sumažėja 20%.
+       5.4. Jeigu rida daugiau nei 100000, tai kaina sumažėja 30%.
+       5.5. Jeigu rida daugiau nei 400000, tai kaina sumažėja 50%.
+
+6. Pridėti property 'baseColors'. Tai bus masyvas su bazinėmis spalvomis (juoda, raudona, mėlyna, sidabrinė, balta, 'special blue'). Jų pakeisti negalima, nes yra sukuriamos tiesiogiai klasės constructor funkcijoje.
+       6.1. Pridėti property 'color', kuria galima papildyti kuriant automobilio objektą pagal klasę. Jeigu kuriant objektą, spalva nėra nurodoma, tai pagal nutylėjimą ji bus juoda.
+       6.2. Jeigu nurodyta spalva yra 'special blue', tai automobilio kaina turi padidėti 500.
+       6.3. Jeigu nurodytos spalvos nėra tarp bazinių spalvų, tai automobilio kaina turėtų padidėti 3000.
+
+class Cars {
+  constructor(carColor) {
+    this.baseColors = ['juoda', 'raudona', 'mėlyna', 'sidabrinė', 'balta', 'special blue']
+    this.color = carColor
+  }
+}
