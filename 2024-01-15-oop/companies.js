@@ -151,6 +151,44 @@ class Company {
   
     return this.activityAreas
   }
+
+  renderCompanyHTMLElement() {
+    const companyElement = document.createElement('div')
+    companyElement.classList.add('company-wrapper')
+  
+    const nameElement = document.createElement('h2')
+    nameElement.classList.add('company-name')
+    nameElement.textContent = `${this['company name']} (${this.opened})`
+    companyElement.append(nameElement)
+  
+    const addressElement = document.createElement('p')
+    addressElement.classList.add('company-address')
+    addressElement.textContent = 'Company address: ' + this.getFullAddress()
+    companyElement.append(addressElement)
+  
+    const workingLocationsElement = document.createElement('div')
+    workingLocationsElement.classList.add('company-working-locations-wrapper')
+    companyElement.append(workingLocationsElement)
+  
+    const workingLocationsTitleElement = document.createElement('h3')
+    workingLocationsTitleElement.classList.add('section-title')
+    workingLocationsTitleElement.textContent = 'Working locations:'
+    workingLocationsElement.append(workingLocationsTitleElement)
+  
+    const workingLocationsList = document.createElement('ul')
+    workingLocationsList.classList.add('working-locations-list')
+    workingLocationsElement.append(workingLocationsList)
+  
+    this.workingLocations.forEach(location => {
+      const workingLocationItem = document.createElement('li')
+      workingLocationItem.classList.add('working-location-item')
+      workingLocationItem.textContent = location
+      workingLocationsList.append(workingLocationItem)
+    })
+  
+    return companyElement
+  }
+  
 }
 
 // const company2Data = {
@@ -208,7 +246,7 @@ console.log(company2.getWorkingLocations())
 const company3 = new Company({
   isActive: false,
   ceo: 'Doe John',
-  opened: 2010,
+  opened: 2012,
   companyCode: 1324878946,
   employees: 15,
   'company name': 'Company ABC',
@@ -228,3 +266,51 @@ const company3 = new Company({
 
 console.log(company3)
 console.log(company3.getFullAddress())
+
+
+
+function renderCompanyHTMLElement(data) {
+
+  const companyElement = document.createElement('div')
+  companyElement.classList.add('company-wrapper')
+
+  const nameElement = document.createElement('h2')
+  nameElement.classList.add('company-name')
+  nameElement.textContent = `${data['company name']} (${data.opened})`
+  companyElement.append(nameElement)
+
+  const addressElement = document.createElement('p')
+  addressElement.classList.add('company-address')
+  addressElement.textContent = 'Company address: ' + data.getFullAddress()
+  companyElement.append(addressElement)
+
+  const workingLocationsElement = document.createElement('div')
+  workingLocationsElement.classList.add('company-working-locations-wrapper')
+  companyElement.append(workingLocationsElement)
+
+  const workingLocationsTitleElement = document.createElement('h3')
+  workingLocationsTitleElement.classList.add('section-title')
+  workingLocationsTitleElement.textContent = 'Working locations:'
+  workingLocationsElement.append(workingLocationsTitleElement)
+
+  const workingLocationsList = document.createElement('ul')
+  workingLocationsList.classList.add('working-locations-list')
+  workingLocationsElement.append(workingLocationsList)
+
+  data.workingLocations.forEach(location => {
+    const workingLocationItem = document.createElement('li')
+    workingLocationItem.classList.add('working-location-item')
+    workingLocationItem.textContent = location
+    workingLocationsList.append(workingLocationItem)
+  })
+
+  return companyElement
+}
+
+const contentElement = document.querySelector('#content')
+// const company3Element = renderCompanyHTMLElement(company3)
+// const company2Element = renderCompanyHTMLElement(company2)
+const company3Element = company3.renderCompanyHTMLElement()
+const company2Element = company2.renderCompanyHTMLElement()
+
+contentElement.append(company3Element, company2Element)
