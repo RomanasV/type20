@@ -73,6 +73,9 @@ UŽDUOTIS:
        6.2. Jeigu nurodyta spalva yra 'special blue', tai automobilio kaina turi padidėti 500.
        6.3. Jeigu nurodytos spalvos nėra tarp bazinių spalvų, tai automobilio kaina turėtų padidėti 3000.
 
+7. Sukurti metodą 'renderElement', kuris sukurią html elementą, jame atvaizduoja automobilio informaciją (modelį, brandą, variklio tipą, kilometražą, spalvą, bazinę kainą) ir šį elementą išveda į ekraną.
+       7.1. Pridėti property 'image' (nuotraukos nuoroda), kuris turėtų būti nuotrauka ir šią nuotrauką, taip pat, pridėti į formuluojamą elementą.
+
 class Cars {
   constructor(carColor) {
     this.baseColors = ['juoda', 'raudona', 'mėlyna', 'sidabrinė', 'balta', 'special blue']
